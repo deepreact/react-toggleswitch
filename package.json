@@ -1,0 +1,45 @@
+{
+  "name": "react-toggleswitch",
+  "version": "1.1.0",
+  "description": "Fully customizable toggle switch",
+  "keywords": [
+    "react-component",
+    "react",
+    "switch",
+    "toggle",
+    "toggleSwitch",
+    "toggle-switch",
+    "react-toggleswitch"
+  ],
+  "main": "switch.js",
+  "author": "Deep Prakash <deepprakashp354@outlook.com>",
+  "license": "CUBITO",
+  "scripts": {
+    "build": "./node_modules/.bin/babel switch.jsx -o switch.js",
+    "test": "jshint . --exclude node_modules",
+    "prepublish": "npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deepreact/react-toggleswitch"
+  },
+  "bugs": {
+    "url": "https://github.com/deepreact/react-toggleswitch"
+  },
+  "browserify": {
+    "transform": [
+      "node-lessify"
+    ]
+  },
+  "dependencies": {
+    "node-lessify": "0.0.10"
+  },
+  "peerDependencies": {
+    "react": ">=0.14",
+    "react-addons-css-transition-group": ">=0.14"
+  },
+  "devDependencies": {
+    "babel": "^5.6.23",
+    "jshint": "^2.7.0"
+  }
+}
